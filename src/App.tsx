@@ -1,4 +1,3 @@
-import './App.css'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -10,7 +9,7 @@ import Skills from './components/Skills'
 function App() {
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foregroun font-sans antialiasedd">
       <Header />
       <Hero />
       <About />
