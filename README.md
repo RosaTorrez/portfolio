@@ -34,7 +34,7 @@ Desarrollar un portafolio web responsivo, moderno con todas las secciones esenci
 
 ## 📦 Instalación Rápida
 
-\`\`\`bash
+bash
 # 1. Crear proyecto Vite
 npm create vite@latest my-portfolio -- --template react-ts
 cd my-portfolio
@@ -54,7 +54,11 @@ npm run dev
 \`\`\`
 my-portfolio/
 ├── src/
-│   ├── components/              # Componentes React
+|   ├── assets
+│   │   ├── Header.tsx
+│   ├── components/   
+│   │   ├── ui
+# Componentes React
 │   │   ├── Header.tsx
 │   │   ├── Hero.tsx
 │   │   ├── About.tsx
@@ -63,10 +67,7 @@ my-portfolio/
 │   │   ├── Skills.tsx
 │   │   ├── Contact.tsx
 │   │   └── Footer.tsx
-│   ├── data/                    # Datos estáticos
-│   │   ├── projects.ts
-│   │   ├── skills.ts
-│   │   └── experience.ts
+│   
 │   ├── styles/                  # Estilos globales
 │   │   └── index.css
 │   ├── App.tsx
@@ -75,10 +76,7 @@ my-portfolio/
 ├── public/                      # Archivos estáticos
 │   ├── cv.pdf
 │   └── avatar.jpg
-├── scrum/                       # Documentación Scrum
-│   ├── daily-standup.md
-│   ├── sprint-review.md
-│   └── retrospective.md
+
 ├── index.html
 ├── vite.config.ts
 ├── tsconfig.json
@@ -87,6 +85,10 @@ my-portfolio/
 ├── package.json
 └── SPRINT_PLAN.md
 \`\`\`
+<img width="169" height="568" alt="image" src="https://github.com/user-attachments/assets/0c984af7-1492-42bf-b2b0-9f2d2045ec60" />
+<img width="173" height="591" alt="image" src="https://github.com/user-attachments/assets/4625ed8f-d797-48f1-98a4-dc5e42ca6f82" />
+
+
 
 ## 🔀 Estrategia Git - Flujo Completo
 
@@ -199,8 +201,8 @@ npm run lint         # Verifica código
 
 ## 👤 Autor
 
-[Tu Nombre]  
-[Tu Email]  
+[Rosa Mariana Torrez Quispe]  
+[rosatorrez23@gmail.com ]  
 [Tu Portfolio]
 
 ## 📄 Licencia
@@ -209,4 +211,4 @@ MIT - Libre para usar y modificar
 
 ---
 
-**Última actualización:** Día 1 - Setup Inicial
+
