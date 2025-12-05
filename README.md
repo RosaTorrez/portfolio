@@ -83,7 +83,7 @@ my-portfolio/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── package.json
-└── SPRINT_PLAN.md
+
 \`\`\`
 <img width="169" height="568" alt="image" src="https://github.com/user-attachments/assets/0c984af7-1492-42bf-b2b0-9f2d2045ec60" />
 <img width="173" height="591" alt="image" src="https://github.com/user-attachments/assets/4625ed8f-d797-48f1-98a4-dc5e42ca6f82" />
