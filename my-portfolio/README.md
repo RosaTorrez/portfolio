@@ -34,8 +34,9 @@ Desarrollar un portafolio web responsivo, moderno con todas las secciones esenci
 
 ## 📦 Instalación Rápida
 
-\`\`\`bash
+bash
 # 1. Crear proyecto Vite
+
 npm create vite@latest my-portfolio -- --template react-ts
 cd my-portfolio
 
@@ -45,7 +46,8 @@ npm install react-router-dom axios react-icons framer-motion
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
-# 3. Ejecutar en desarrollo
+# 3.Ejecutar en desarrollo
+
 npm run dev
 \`\`\`
 
@@ -54,7 +56,11 @@ npm run dev
 \`\`\`
 my-portfolio/
 ├── src/
-│   ├── components/              # Componentes React
+|   ├── assets
+│   │   ├── Header.tsx
+│   ├── components/   
+│   │   ├── ui
+## 📁 Componentes React
 │   │   ├── Header.tsx
 │   │   ├── Hero.tsx
 │   │   ├── About.tsx
@@ -63,10 +69,7 @@ my-portfolio/
 │   │   ├── Skills.tsx
 │   │   ├── Contact.tsx
 │   │   └── Footer.tsx
-│   ├── data/                    # Datos estáticos
-│   │   ├── projects.ts
-│   │   ├── skills.ts
-│   │   └── experience.ts
+│   
 │   ├── styles/                  # Estilos globales
 │   │   └── index.css
 │   ├── App.tsx
@@ -75,18 +78,19 @@ my-portfolio/
 ├── public/                      # Archivos estáticos
 │   ├── cv.pdf
 │   └── avatar.jpg
-├── scrum/                       # Documentación Scrum
-│   ├── daily-standup.md
-│   ├── sprint-review.md
-│   └── retrospective.md
+
 ├── index.html
 ├── vite.config.ts
 ├── tsconfig.json
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── package.json
-└── SPRINT_PLAN.md
+
 \`\`\`
+<img width="169" height="568" alt="image" src="https://github.com/user-attachments/assets/0c984af7-1492-42bf-b2b0-9f2d2045ec60" />
+<img width="173" height="591" alt="image" src="https://github.com/user-attachments/assets/4625ed8f-d797-48f1-98a4-dc5e42ca6f82" />
+
+
 
 ## 🔀 Estrategia Git - Flujo Completo
 
@@ -149,12 +153,71 @@ docs(readme): update installation instructions
 chore(setup): configure tailwind and postcss
 \`\`\`
 
-## 📚 Documentación Scrum Incluida
+## 📚 Documentación Scrum 
 
-- **SPRINT_PLAN.md**: Plan detallado de 14 días
-- **scrum/daily-standup.md**: Template para standups diarios
-- **scrum/sprint-review.md**: Revisión del sprint
-- **scrum/retrospective.md**: Retrospectiva del sprint
+## Día 1 - Inicialización del Proyecto
+- **Completado**: Setup Vite + React + TypeScript + Git
+- **Hoy**: Crear estructura de componentes base
+- **Bloqueos**: Ninguno
+- **Notas**: Proyecto inicializado correctamente
+
+## Día 2 - Header
+- **Completado**: Header responsivo con navegación
+- **Hoy**: Implementar Hero section
+- **Bloqueos**: Ninguno
+- **Notas**: Mobile menu funcionando perfectamente
+
+## Día 3 - Hero
+- **Completado**: Hero con avatar y CTAs
+- **Hoy**: Sección About
+- **Bloqueos**: Ninguno
+- **Notas**: Animaciones con Framer Motion añadidas
+
+## Día 4 - About
+- **Completado**: About section con experiencia
+- **Hoy**: Componentes Projects
+- **Bloqueos**: Ninguno
+- **Notas**: Sistema de design tokens implementado
+
+## Día 5 - Projects
+- **Completado**: Projects grid + ProjectModal
+- **Hoy**: Skills component
+- **Bloqueos**: Ninguno
+- **Notas**: Modal interactivo funcionando
+
+## Día 6 - Skills
+- **Completado**: Skills con barras de progreso
+- **Hoy**: Contact form
+- **Bloqueos**: Ninguno
+- **Notas**: Animaciones de barras completadas
+
+## Día 7 - Contact & Footer
+- **Completado**: Contact form + Footer
+- **Hoy**: Responsive polish
+- **Bloqueos**: Ninguno
+- **Notas**: Validación básica implementada
+
+## Día 8-10 - Polish & Testing
+- **Completado**: Responsive adjustments
+- **Hoy**: Testing cross-browser
+- **Bloqueos**: Ninguno
+- **Notas**: Todos los breakpoints funcionando
+
+## Día 11-12 - Documentación
+- **Completado**: README + documentación
+- **Hoy**: Screenshots y preparación final
+- **Bloqueos**: Ninguno
+- **Notas**: Documentación completa
+
+## Día 13 - Deploy
+- **Completado**: Preparación para deploy
+- **Hoy**: Deploy en Vercel/GitHub Pages
+- **Bloqueos**: Ninguno
+- **Notas**: Proyecto listo
+
+## Día 14 - Sprint Review & Retro
+- **Completado**: Todo el Sprint Goal
+- **Resultados**: 100% de funcionalidades completadas
 
 ## 🎨 Paleta de Colores
 
@@ -167,10 +230,11 @@ chore(setup): configure tailwind and postcss
 ## 🚀 Comandos Principales
 
 \`\`\`bash
-# Desarrollo
+## Desarrollo
 npm run dev          # Inicia servidor local (puerto 3000)
 
 # Build
+
 npm run build        # Build para producción
 npm run preview      # Previsualiza build
 
@@ -199,8 +263,8 @@ npm run lint         # Verifica código
 
 ## 👤 Autor
 
-[Tu Nombre]  
-[Tu Email]  
+[Rosa Mariana Torrez Quispe]  
+[rosatorrez23@gmail.com ]  
 [Tu Portfolio]
 
 ## 📄 Licencia
@@ -209,4 +273,130 @@ MIT - Libre para usar y modificar
 
 ---
 
-**Última actualización:** Día 1 - Setup Inicial
+# Despliegue en GitHub Pages
+
+Este proyecto está configurado para desplegarse en GitHub Pages bajo el subdirectorio `/portfolio/`. Para asegurar que todos los recursos y enlaces funcionen correctamente, la ruta base ha sido establecida en la configuración de Vite.
+
+## Cambios clave en la configuración
+
+- En `vite.config.ts`, la opción `base` está configurada como `'/portfolio/'`.
+
+```ts
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  // https://backendhub-1i8n.github.io/portfolio/
+  base: "/portfolio/",
+});
+```
+
+## Rutas de recursos
+
+Todas las rutas de recursos en el proyecto han sido actualizadas para incluir el prefijo `/portfolio/`. Por ejemplo, ahora las imágenes se referencian como `/portfolio/developer-portrait.jpg` en lugar de `/developer-portrait.jpg`. Esto asegura que los recursos se ubiquen correctamente cuando el sitio esté alojado en GitHub Pages.
+Ejemplo desde `Hero.tsx`:
+
+```tsx
+<img
+  src="/portfolio/developer-portrait.jpg"
+  alt="Developer"
+  className="w-full h-full object-cover"
+/>
+```
+
+## Comando de previsualización
+
+El script `preview` en `package.json` ha sido actualizado para especificar un puerto para la previsualización local:
+
+```json
+"preview": "vite preview --port 8080"
+```
+
+Esto te permite previsualizar la compilación localmente en el puerto 8080, asegurando que la ruta base funcione como se espera antes de desplegar en GitHub Pages.
+
+## Despliegue
+
+Al desplegar el proyecto en GitHub Pages, asegúrate de que la configuración del repositorio esté ajustada para servir el sitio desde el subdirectorio `/portfolio/`. Esta configuración permitirá que los usuarios accedan correctamente al portafolio en `https://<username>.github.io/portfolio/`.
+
+- crea todas las carpetas y archivos necesarios para el despliegue
+
+```bash
+mkdir -p .github/workflows
+touch .github/workflows/deploy.yml
+```
+
+- agrega el flujo de despliegue en `.github/workflows/deploy.yml`
+
+```yaml
+# Flujo simple para desplegar contenido estático en GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Se ejecuta en pushes dirigidos a la rama principal
+  push:
+    branches: ["main"]
+
+  # Permite ejecutar este flujo manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Configura los permisos de GITHUB_TOKEN para permitir el despliegue en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite un despliegue concurrente
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Trabajo único de despliegue ya que solo estamos desplegando
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          # Subir carpeta dist
+          path: "./dist"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+# Configuración de GitHub Pages
+
+Para asegurar que GitHub Pages sirva el sitio correctamente desde el subdirectorio `/portfolio/`, asegúrate de configurar los ajustes del repositorio de la siguiente manera:
+
+1. Ve al repositorio en GitHub.
+2. Haz clic en la pestaña "Settings".
+3. En la barra lateral izquierda, haz clic en "Pages".
+4. En "Source", selecciona la opción `GitHub Actions`.
+5. Haz clic en "Save".
+6. Asegúrate de que la URL del sitio refleje el subdirectorio `/portfolio/`, por ejemplo: `https://<username>.github.io/portfolio/`.
