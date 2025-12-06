@@ -1,0 +1,66 @@
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+
+# --------------------------------------
+# Environment variables
+# --------------------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*
+!.env.example
+
+# --------------------------------------
+# Build output
+# --------------------------------------
+dist/
+build/
+.next/
+out/
+.vite/
+coverage/
+storybook-static/
+
+# --------------------------------------
+# Editor / IDE
+# --------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --------------------------------------
+# OS generated files
+# --------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------------------
+# Logs
+# --------------------------------------
+*.log
+logs/
+debug.log
+
+# --------------------------------------
+# Cache
+# --------------------------------------
+.cache/
+.next/cache/
+turbo/
+.eslintcache
+.prettier-cache/
+stylelintcache/
+parcel-cache/
+vite-cache/
